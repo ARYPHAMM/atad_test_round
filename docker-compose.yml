@@ -1,0 +1,64 @@
+version: "3"
+services:
+  dev_web_atad:
+    build: 
+      context: .
+      dockerfile: ./docker/Dockerfile
+    container_name: dev_web_atad
+    working_dir: /var/www/html
+    ports: 
+      - "80:80"
+    volumes: 
+          - .:/var/www/html
+          - ./docker/nginx_log:/var/log/nginx
+          - ./docker/php-fpm/php-fpm.log:/var/log/php-fpm.log
+          - ./docker/config/app.conf:/etc/nginx/conf.d/app.conf
+          - ./docker/init-scripts/:/init-scripts/
+    links: 
+      - mysql
+      # - dev_web_atad
+  mysql:
+    platform: linux/amd64
+    image: mysql:5.7.35
+    container_name: db
+    ports: 
+      - "3308:3306"
+    volumes: 
+      - ./docker/mysql:/var/lib/mysql
+    environment:
+        MYSQL_DATABASE: laravel
+        MYSQL_ROOT_PASSWORD: password
+  phpmyadmin:
+      image: phpmyadmin/phpmyadmin
+      container_name: phpmyadmin
+      # restart: unless-stopped
+      restart: always
+      ports: 
+          - 8200:80
+      environment:
+          PMA_HOST: mysql
+          PMA_PORT: 3306
+          PMA_USER: root
+          PMA_PASSWORD: password
+      links: 
+        - mysql
+  npm:
+    platform: linux/amd64
+    image: node:14-alpine
+    container_name: my-app-npm
+    # restart: always
+    working_dir: /var/www/html
+    volumes:
+      - .:/var/www/html
+    command: npm run watch
+      #    npm install
+      # npm install browser-sync browser-sync-webpack-plugin@2.0.1 --save-dev --production=false
+      # npm run watch
+    depends_on:
+       - dev_web_atad
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    # links: 
+    #   - dev_web_atad
+
