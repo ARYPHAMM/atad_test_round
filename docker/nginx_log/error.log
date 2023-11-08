@@ -9958,3 +9958,38 @@ PHP message: PHP Warning:  include(): Failed opening '_layoutheader.php' for inc
 2023/11/08 16:37:13 [error] 45#45: *56 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '}' in /var/www/html/update-student.php on line 7" while reading response header from upstream, client: 172.20.0.1, server: localhost, request: "GET /update-student.php?id= HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.2-fpm.sock:", host: "localhost"
 2023/11/08 16:37:14 [error] 45#45: *56 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '}' in /var/www/html/update-student.php on line 7" while reading response header from upstream, client: 172.20.0.1, server: localhost, request: "GET /update-student.php?id= HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.2-fpm.sock:", host: "localhost"
 2023/11/08 17:45:43 [error] 45#45: *335 open() "/var/www/html/favicon.ico" failed (2: No such file or directory), client: 172.20.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/list-student.php"
+2023/11/08 18:27:41 [error] 47#47: *510 open() "/var/www/html/favicon.ico" failed (2: No such file or directory), client: 172.20.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/list-classroom.php"
+2023/11/08 18:27:43 [error] 47#47: *510 open() "/var/www/html/favicon.ico" failed (2: No such file or directory), client: 172.20.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/list-classroom.php"
+2023/11/08 18:48:47 [notice] 38#38: using the "epoll" event method
+2023/11/08 18:48:47 [notice] 38#38: nginx/1.21.6
+2023/11/08 18:48:47 [notice] 38#38: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2023/11/08 18:48:47 [notice] 38#38: OS: Linux 5.15.49-linuxkit
+2023/11/08 18:48:47 [notice] 38#38: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/11/08 18:48:47 [notice] 38#38: start worker processes
+2023/11/08 18:48:47 [notice] 38#38: start worker process 43
+2023/11/08 18:48:47 [notice] 38#38: start worker process 45
+2023/11/08 18:48:47 [notice] 38#38: start worker process 47
+2023/11/08 18:48:47 [notice] 38#38: start worker process 48
+2023/11/08 18:48:47 [notice] 38#38: start worker process 49
+2023/11/08 18:48:47 [emerg] 49#49: io_setup() failed (38: Function not implemented)
+2023/11/08 18:48:47 [emerg] 43#43: io_setup() failed (38: Function not implemented)
+2023/11/08 18:48:47 [emerg] 45#45: io_setup() failed (38: Function not implemented)
+2023/11/08 18:48:47 [emerg] 47#47: io_setup() failed (38: Function not implemented)
+2023/11/08 18:48:47 [emerg] 48#48: io_setup() failed (38: Function not implemented)
+2023/11/08 18:49:16 [notice] 37#37: using the "epoll" event method
+2023/11/08 18:49:16 [notice] 37#37: nginx/1.21.6
+2023/11/08 18:49:16 [notice] 37#37: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2023/11/08 18:49:16 [notice] 37#37: OS: Linux 5.15.49-linuxkit
+2023/11/08 18:49:16 [notice] 37#37: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/11/08 18:49:16 [notice] 37#37: start worker processes
+2023/11/08 18:49:16 [notice] 37#37: start worker process 42
+2023/11/08 18:49:16 [notice] 37#37: start worker process 43
+2023/11/08 18:49:16 [notice] 37#37: start worker process 45
+2023/11/08 18:49:16 [notice] 37#37: start worker process 47
+2023/11/08 18:49:16 [notice] 37#37: start worker process 48
+2023/11/08 18:49:16 [emerg] 45#45: io_setup() failed (38: Function not implemented)
+2023/11/08 18:49:16 [emerg] 42#42: io_setup() failed (38: Function not implemented)
+2023/11/08 18:49:16 [emerg] 47#47: io_setup() failed (38: Function not implemented)
+2023/11/08 18:49:16 [emerg] 48#48: io_setup() failed (38: Function not implemented)
+2023/11/08 18:49:16 [emerg] 43#43: io_setup() failed (38: Function not implemented)
+2023/11/08 18:49:28 [error] 42#42: *1 open() "/var/www/html/favicon.ico" failed (2: No such file or directory), client: 172.23.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"

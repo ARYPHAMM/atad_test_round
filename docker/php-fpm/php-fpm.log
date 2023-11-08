@@ -1111,3 +1111,9 @@
 [08-Nov-2023 16:37:13] WARNING: [pool www] child 53 said into stderr: "NOTICE: PHP message: PHP Parse error:  syntax error, unexpected '}' in /var/www/html/update-student.php on line 7"
 [08-Nov-2023 16:37:13] WARNING: [pool www] child 55 said into stderr: "NOTICE: PHP message: PHP Parse error:  syntax error, unexpected '}' in /var/www/html/update-student.php on line 7"
 [08-Nov-2023 16:37:14] WARNING: [pool www] child 57 said into stderr: "NOTICE: PHP message: PHP Parse error:  syntax error, unexpected '}' in /var/www/html/update-student.php on line 7"
+[08-Nov-2023 18:48:47] NOTICE: fpm is running, pid 36
+[08-Nov-2023 18:48:47] NOTICE: ready to handle connections
+[08-Nov-2023 18:48:47] NOTICE: systemd monitor interval set to 10000ms
+[08-Nov-2023 18:49:17] NOTICE: fpm is running, pid 35
+[08-Nov-2023 18:49:17] NOTICE: ready to handle connections
+[08-Nov-2023 18:49:17] NOTICE: systemd monitor interval set to 10000ms

@@ -42,23 +42,5 @@ services:
           PMA_PASSWORD: password
       links: 
         - mysql
-  npm:
-    platform: linux/amd64
-    image: node:14-alpine
-    container_name: my-app-npm
-    # restart: always
-    working_dir: /var/www/html
-    volumes:
-      - .:/var/www/html
-    command: npm run watch
-      #    npm install
-      # npm install browser-sync browser-sync-webpack-plugin@2.0.1 --save-dev --production=false
-      # npm run watch
-    depends_on:
-       - dev_web_atad
-    ports:
-      - "3000:3000"
-      - "3001:3001"
-    # links: 
-    #   - dev_web_atad
+ 
 
