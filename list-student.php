@@ -39,7 +39,7 @@ if (isset($_REQUEST['action']) && $_REQUEST['action'] == 'delete') {
             <th>Họ tên</th>
             <th>Email</th>
             <th>Số điện thoại</th>
-            <th>Mô tả ngắn</th>
+            <th>Giới thiệu bản thân</th>
             <th>
             </th>
           </tr>

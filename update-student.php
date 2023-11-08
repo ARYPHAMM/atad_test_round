@@ -61,8 +61,8 @@ if (isset($_REQUEST['action']) && ($_REQUEST['action'] == 'create' || $_REQUEST[
           <input name="email" type="text" class="form-control" placeholder="Nhập email" value="<?php echo $_REQUEST['email'] ?? $item['email'] ?>" aria-describedby="helpId">
         </div>
         <div class="form-group">
-          <label for="">Mô tả</label>
-          <textarea name="description" class="form-control" rows="3" placeholder="Mô tả ngắn"><?php echo $_REQUEST['description'] ?? $item['description'] ?></textarea>
+          <label for="">Giới thiệu bản thân</label>
+          <textarea name="description" class="form-control" rows="3" placeholder="Nhập giới thiệu"><?php echo $_REQUEST['description'] ?? $item['description'] ?></textarea>
         </div>
         <div class="form-group">
           <button type="submit" class="btn btn-primary">Lưu</button>
